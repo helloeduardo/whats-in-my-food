@@ -4,8 +4,8 @@
 
 <% @foods.each do |food| %>
   <div class="food">
+    <h2>Description: <%= food.description %></h2>
     <p>GTIN/UPC: <%= food.upc %></p>
-    <p>Description: <%= food.description %></p>
     <p>Brand Owner: <%= food.brand %></p>
     <p>Ingredients: <%= food.ingredients %></p>
   </div>
