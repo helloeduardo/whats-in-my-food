@@ -3,8 +3,10 @@
 <p>Total Items: <%= @foods_count %></p>
 
 <% @foods.each do |food| %>
-  <p>GTIN/UPC: <%= food.upc %></p>
-  <p>Description: <%= food.description %></p>
-  <p>Brand Owner: <%= food.brand %></p>
-  <p>Ingredients: <%= food.ingredients %></p>
+  <div class="food">
+    <p>GTIN/UPC: <%= food.upc %></p>
+    <p>Description: <%= food.description %></p>
+    <p>Brand Owner: <%= food.brand %></p>
+    <p>Ingredients: <%= food.ingredients %></p>
+  </div>
 <% end %>
