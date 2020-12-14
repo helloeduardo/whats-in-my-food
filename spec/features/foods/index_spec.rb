@@ -11,7 +11,7 @@ describe "Foods Index Page" do
 
       expect(current_path).to eq(foods_path)
 
-      expect(page).to have_content("Total Items: 10")
+      expect(page).to have_content("Total Items: 39244")
 
       expect(page).to have_css('.food', count: 10)
 
